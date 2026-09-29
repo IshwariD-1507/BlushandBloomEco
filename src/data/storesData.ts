@@ -1,0 +1,143 @@
+import { StoreLocation } from '../types';
+
+export const STORE_LOCATIONS: StoreLocation[] = [
+  {
+    id: 'store-mumbai-bandra',
+    city: 'Mumbai',
+    area: 'Bandra West',
+    name: 'Blush & Bloom Sanctuary @ Pali Village',
+    address: '14, Dr. Ambedkar Road, Off Pali Naka, Bandra West, Mumbai, Maharashtra 400050',
+    pincode: '400050',
+    phone: '+91 22 2640 8821',
+    hours: '10:30 AM – 8:30 PM (Open All 7 Days)',
+    openHour: 10.5,
+    closeHour: 20.5,
+    googleMapsQuery: 'Pali+Naka+Bandra+West+Mumbai+Blush+Bloom+Eco',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-mumbai-fort',
+    city: 'Mumbai',
+    area: 'Kala Ghoda / Fort',
+    name: 'Eco Collective @ Heritage District',
+    address: 'Heritage Wing 2B, Ropewalk Lane, Behind Jehangir Art Gallery, Fort, Mumbai 400001',
+    pincode: '400001',
+    phone: '+91 22 2284 1912',
+    hours: '11:00 AM – 8:00 PM (Tue – Sun)',
+    openHour: 11.0,
+    closeHour: 20.0,
+    daysClosed: [1], // Closed Monday
+    googleMapsQuery: 'Kala+Ghoda+Fort+Mumbai+Jehangir+Art+Gallery',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-blr-indiranagar',
+    city: 'Bengaluru',
+    area: 'Indiranagar',
+    name: 'Blush & Bloom Refill Apothecary',
+    address: '612, 12th Main Road, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038',
+    pincode: '560038',
+    phone: '+91 80 4125 7600',
+    hours: '10:00 AM – 9:00 PM (Open All 7 Days)',
+    openHour: 10.0,
+    closeHour: 21.0,
+    googleMapsQuery: '12th+Main+Road+Indiranagar+Bengaluru',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-blr-lavelle',
+    city: 'Bengaluru',
+    area: 'Lavelle Road',
+    name: 'The Green Canvas by B&B',
+    address: 'No. 32, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru 560001',
+    pincode: '560001',
+    phone: '+91 80 2221 4490',
+    hours: '10:30 AM – 8:00 PM (Mon – Sat)',
+    openHour: 10.5,
+    closeHour: 20.0,
+    daysClosed: [0], // Closed Sunday
+    googleMapsQuery: 'Lavelle+Road+Bengaluru+Karnataka',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-pune-kp',
+    city: 'Pune',
+    area: 'Koregaon Park',
+    name: 'Blush & Bloom Botánica @ Lane 6',
+    address: 'Row House 4, Vascon Heights, Lane 6, Koregaon Park, Pune, Maharashtra 411001',
+    pincode: '411001',
+    phone: '+91 20 2615 3302',
+    hours: '10:00 AM – 8:30 PM (Open All 7 Days)',
+    openHour: 10.0,
+    closeHour: 20.5,
+    googleMapsQuery: 'Lane+6+Koregaon+Park+Pune+Maharashtra',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-delhi-khan',
+    city: 'Delhi NCR',
+    area: 'Khan Market',
+    name: 'Blush & Bloom Conscious Suite',
+    address: 'Shop 48-A, Middle Lane, Khan Market, New Delhi, Delhi 110003',
+    pincode: '110003',
+    phone: '+91 11 4350 2911',
+    hours: '11:00 AM – 8:30 PM (Open All 7 Days)',
+    openHour: 11.0,
+    closeHour: 20.5,
+    googleMapsQuery: 'Khan+Market+New+Delhi+Delhi+110003',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-gurgaon-dlf',
+    city: 'Delhi NCR',
+    area: 'Gurugram / DLF Phase 5',
+    name: 'Earth First Refill Bar @ One Horizon',
+    address: 'Ground Plaza, One Horizon Centre, Golf Course Road, DLF Phase 5, Gurugram 122002',
+    pincode: '122002',
+    phone: '+91 124 498 7210',
+    hours: '10:00 AM – 9:00 PM (Open All 7 Days)',
+    openHour: 10.0,
+    closeHour: 21.0,
+    googleMapsQuery: 'One+Horizon+Center+Golf+Course+Road+Gurugram',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-hyd-jubilee',
+    city: 'Hyderabad',
+    area: 'Jubilee Hills',
+    name: 'Sustainable Roots @ Road 36',
+    address: 'Plot 792, Road No. 36, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033',
+    pincode: '500033',
+    phone: '+91 40 2355 6188',
+    hours: '10:30 AM – 8:30 PM (Tue – Sun)',
+    openHour: 10.5,
+    closeHour: 20.5,
+    daysClosed: [1], // Closed Monday
+    googleMapsQuery: 'Road+36+Jubilee+Hills+Hyderabad',
+    refillAvailable: true,
+    glassDropoff: true
+  },
+  {
+    id: 'store-jaipur-cscheme',
+    city: 'Jaipur',
+    area: 'C-Scheme',
+    name: 'Blush & Bloom Heritage Refill Hub',
+    address: 'E-141, Sardar Patel Marg, C-Scheme, Jaipur, Rajasthan 302001',
+    pincode: '302001',
+    phone: '+91 141 238 9012',
+    hours: '10:30 AM – 8:00 PM (Mon – Sat)',
+    openHour: 10.5,
+    closeHour: 20.0,
+    daysClosed: [0], // Closed Sunday
+    googleMapsQuery: 'Sardar+Patel+Marg+C+Scheme+Jaipur',
+    refillAvailable: true,
+    glassDropoff: true
+  }
+];

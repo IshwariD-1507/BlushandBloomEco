@@ -1,0 +1,7 @@
+{
+  "name": "Blush & Bloom Eco",
+  "description": "Eco-friendly, vegan & cruelty-free beauty and skincare crafted in India. Refillable packaging, one tree planted per purchase, and certified clean formulas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

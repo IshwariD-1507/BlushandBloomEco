@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-sage-light: #EBF0EC;
+  --color-sage: #D2DCD4;
+  --color-sage-dark: #758A7A;
+  --color-cream: #FAF8F5;
+  --color-cream-card: #F4EFEB;
+  --color-blush-light: #FBF4F2;
+  --color-blush: #F4E1DD;
+  --color-blush-dark: #D4A59D;
+  --color-forest: #1C3325;
+  --color-forest-dark: #122118;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #FAF8F5;
+  color: #1C3325;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D2C7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #758A7A;
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 4px 20px -2px rgba(28, 51, 37, 0.25);
+  }
+  50% {
+    box-shadow: 0 6px 28px 2px rgba(28, 51, 37, 0.42);
+  }
+}
+
+.luxury-button-glow {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-button-glow:hover {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+  transform: translateY(-1.5px);
+}
+.luxury-button-glow:active {
+  transform: translateY(0.5px) scale(0.98);
+}
+
+.card-luxury {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+.card-luxury:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(44, 72, 54, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
